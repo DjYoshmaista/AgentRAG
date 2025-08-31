@@ -1,0 +1,93 @@
+syntax = "proto3";
+
+package agentic.v1;
+
+// Core message types
+message Task {
+  string id = 1;
+  string type = 2;
+  string description = 3;
+  map<string, string> parameters = 4;
+  repeated string dependencies = 5;
+  TaskPriority priority = 6;
+  int64 created_at = 7;
+  int64 deadline = 8;
+}
+
+enum TaskPriority {
+  LOW = 0;
+  NORMAL = 1;
+  HIGH = 2;
+  CRITICAL = 3;
+}
+
+message Agent {
+  string id = 1;
+  string type = 2;
+  AgentStatus status = 3;
+  map<string, string> capabilities = 4;
+  ResourceUsage resources = 5;
+}
+
+enum AgentStatus {
+  IDLE = 0;
+  BUSY = 1;
+  ERROR = 2;
+  OFFLINE = 3;
+}
+
+message ResourceUsage {
+  double cpu_percent = 1;
+  int64 memory_bytes = 2;
+  double gpu_percent = 3;
+}
+
+// Messages for orchestration
+message TaskRequest {
+  Task task = 1;
+  string requester_id = 2;
+}
+
+message TaskResponse {
+  string task_id = 1;
+  TaskStatus status = 2;
+  string result = 3;
+  string error = 4;
+  map<string, string> metadata = 5;
+}
+
+enum TaskStatus {
+  PENDING = 0;
+  RUNNING = 1;
+  COMPLETED = 2;
+  FAILED = 3;
+  CANCELLED = 4;
+}
+
+// Vector operations
+message VectorQuery {
+  string id = 1;
+  repeated float vector = 2;
+  int32 top_k = 3;
+  map<string, string> filters = 4;
+}
+
+message VectorResult {
+  string id = 1;
+  float score = 2;
+  map<string, string> metadata = 3;
+}
+
+// Model inference
+message InferenceRequest {
+  string model_name = 1;
+  string prompt = 2;
+  map<string, string> parameters = 3;
+  bool stream = 4;
+}
+
+message InferenceResponse {
+  string response = 1;
+  bool is_complete = 2;
+  map<string, string> metadata = 3;
+}

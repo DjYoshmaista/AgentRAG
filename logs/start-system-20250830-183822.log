@@ -1,0 +1,147 @@
+[0;32m[INFO][0m Checking dependencies...
+[2025-08-30 18:38:22] [STARTUP] Checking dependencies...
+[2025-08-30 18:38:22] [STARTUP] Checking dependencies...
+[2025-08-30 18:38:22] [STARTUP] Checking for required tools: go, zig, python3
+[2025-08-30 18:38:22] [STARTUP] Checking for required tools: go, zig, python3
+[2025-08-30 18:38:22] [STARTUP] Creating build and log directories
+[2025-08-30 18:38:22] [STARTUP] Creating build and log directories
+[0;32m[INFO][0m Starting Multi-Agent Orchestration System...
+[2025-08-30 18:38:22] [STARTUP] Starting Multi-Agent Orchestration System...
+[2025-08-30 18:38:22] [STARTUP] Starting Multi-Agent Orchestration System...
+[0;32m[INFO][0m Starting NATS server...
+[2025-08-30 18:38:22] [STARTUP] Starting NATS server...
+[2025-08-30 18:38:22] [STARTUP] Starting NATS server...
+[2025-08-30 18:38:22] [STARTUP] Starting NATS server on port 4222
+[2025-08-30 18:38:22] [STARTUP] Starting NATS server on port 4222
+[2025-08-30 18:38:22] [STARTUP] NATS started with PID 97562
+[2025-08-30 18:38:22] [STARTUP] NATS started with PID 97562
+[0;32m[INFO][0m NATS started with PID 97562
+[2025-08-30 18:38:24] [STARTUP] NATS started with PID 97562
+[2025-08-30 18:38:24] [STARTUP] NATS started with PID 97562
+[0;32m[INFO][0m Checking Ollama...
+[2025-08-30 18:38:24] [STARTUP] Checking Ollama...
+[2025-08-30 18:38:24] [STARTUP] Checking Ollama...
+[0;32m[INFO][0m Ollama is already running
+[2025-08-30 18:38:24] [STARTUP] Ollama is already running
+[2025-08-30 18:38:24] [STARTUP] Ollama is already running
+[2025-08-30 18:38:24] [STARTUP] Detected running Ollama process. Not starting a new instance.
+[2025-08-30 18:38:24] [STARTUP] Detected running Ollama process. Not starting a new instance.
+[0;32m[INFO][0m Starting Vector Engine...
+[2025-08-30 18:38:24] [STARTUP] Starting Vector Engine...
+[2025-08-30 18:38:24] [STARTUP] Starting Vector Engine...
+[2025-08-30 18:38:24] [STARTUP] Starting Vector Engine on port 8080
+[2025-08-30 18:38:24] [STARTUP] Starting Vector Engine on port 8080
+[2025-08-30 18:38:24] [STARTUP] Vector Engine started with PID 97602
+[2025-08-30 18:38:24] [STARTUP] Vector Engine started with PID 97602
+[0;32m[INFO][0m Vector Engine started with PID 97602
+[2025-08-30 18:38:24] [STARTUP] Vector Engine started with PID 97602
+[2025-08-30 18:38:24] [STARTUP] Vector Engine started with PID 97602
+[0;32m[INFO][0m Starting Message Broker...
+[2025-08-30 18:38:25] [STARTUP] Starting Message Broker...
+[2025-08-30 18:38:25] [STARTUP] Starting Message Broker...
+[2025-08-30 18:38:25] [STARTUP] Starting Message Broker (connects to NATS)
+[2025-08-30 18:38:25] [STARTUP] Starting Message Broker (connects to NATS)
+[2025-08-30 18:38:25] [STARTUP] Message Broker started with PID 97625
+[2025-08-30 18:38:25] [STARTUP] Message Broker started with PID 97625
+[0;32m[INFO][0m Message Broker started with PID 97625
+[2025-08-30 18:38:25] [STARTUP] Message Broker started with PID 97625
+[2025-08-30 18:38:25] [STARTUP] Message Broker started with PID 97625
+[2025-08-30 18:38:26] [STARTUP] Starting Model Gateway on port 8070
+[2025-08-30 18:38:26] [STARTUP] Starting Model Gateway on port 8070
+[0;32m[INFO][0m Starting Model Gateway...
+[2025-08-30 18:38:26] [STARTUP] Starting Model Gateway...
+[2025-08-30 18:38:26] [STARTUP] Starting Model Gateway...
+[2025-08-30 18:38:27] [STARTUP] Model Gateway started with PID 97652
+[2025-08-30 18:38:27] [STARTUP] Model Gateway started with PID 97652
+[0;32m[INFO][0m Model Gateway started with PID 97652
+[2025-08-30 18:38:27] [STARTUP] Model Gateway started with PID 97652
+[2025-08-30 18:38:27] [STARTUP] Model Gateway started with PID 97652
+[2025-08-30 18:38:28] [STARTUP] Starting Orchestrator on port 8001
+[2025-08-30 18:38:28] [STARTUP] Starting Orchestrator on port 8001
+[0;32m[INFO][0m Starting Orchestrator...
+[2025-08-30 18:38:28] [STARTUP] Starting Orchestrator...
+[2025-08-30 18:38:28] [STARTUP] Starting Orchestrator...
+[2025-08-30 18:38:28] [STARTUP] Orchestrator started with PID 97678
+[2025-08-30 18:38:28] [STARTUP] Orchestrator started with PID 97678
+[0;32m[INFO][0m Orchestrator started with PID 97678
+[2025-08-30 18:38:28] [STARTUP] Orchestrator started with PID 97678
+[2025-08-30 18:38:28] [STARTUP] Orchestrator started with PID 97678
+[2025-08-30 18:38:29] [STARTUP] Initiating service readiness checks...
+[2025-08-30 18:38:29] [STARTUP] Initiating service readiness checks...
+[2025-08-30 18:38:29] [STARTUP] Waiting for Orchestrator to be ready at http://localhost:8001/health...
+[2025-08-30 18:38:29] [STARTUP] Waiting for Orchestrator to be ready at http://localhost:8001/health...
+[0;32m[INFO][0m Waiting for Orchestrator to be ready...
+[2025-08-30 18:38:29] [STARTUP] Waiting for Orchestrator to be ready...
+[2025-08-30 18:38:29] [STARTUP] Waiting for Orchestrator to be ready...
+[2025-08-30 18:38:29] [STARTUP] Attempt 1/15: Checking http://localhost:8001/health
+[2025-08-30 18:38:29] [STARTUP] Attempt 1/15: Checking http://localhost:8001/health
+[2025-08-30 18:38:29] [STARTUP] SUCCESS: Orchestrator is ready at http://localhost:8001/health
+[2025-08-30 18:38:29] [STARTUP] SUCCESS: Orchestrator is ready at http://localhost:8001/health
+[0;32m[INFO][0m Orchestrator is ready!
+[2025-08-30 18:38:29] [STARTUP] Orchestrator is ready!
+[2025-08-30 18:38:29] [STARTUP] Orchestrator is ready!
+[2025-08-30 18:38:29] [STARTUP] Waiting for Model Gateway to be ready at http://localhost:8070/health...
+[2025-08-30 18:38:29] [STARTUP] Waiting for Model Gateway to be ready at http://localhost:8070/health...
+[0;32m[INFO][0m Waiting for Model Gateway to be ready...
+[2025-08-30 18:38:29] [STARTUP] Waiting for Model Gateway to be ready...
+[2025-08-30 18:38:29] [STARTUP] Waiting for Model Gateway to be ready...
+[2025-08-30 18:38:29] [STARTUP] Attempt 1/15: Checking http://localhost:8070/health
+[2025-08-30 18:38:29] [STARTUP] Attempt 1/15: Checking http://localhost:8070/health
+[2025-08-30 18:38:29] [STARTUP] SUCCESS: Model Gateway is ready at http://localhost:8070/health
+[2025-08-30 18:38:29] [STARTUP] SUCCESS: Model Gateway is ready at http://localhost:8070/health
+[0;32m[INFO][0m Model Gateway is ready!
+[2025-08-30 18:38:29] [STARTUP] Model Gateway is ready!
+[2025-08-30 18:38:29] [STARTUP] Model Gateway is ready!
+[2025-08-30 18:38:29] [STARTUP] Waiting for Vector Engine to be ready at http://localhost:8080/...
+[2025-08-30 18:38:29] [STARTUP] Waiting for Vector Engine to be ready at http://localhost:8080/...
+[0;32m[INFO][0m Waiting for Vector Engine to be ready...
+[2025-08-30 18:38:29] [STARTUP] Waiting for Vector Engine to be ready...
+[2025-08-30 18:38:29] [STARTUP] Waiting for Vector Engine to be ready...
+[2025-08-30 18:38:29] [STARTUP] Attempt 1/15: Checking http://localhost:8080/
+[2025-08-30 18:38:29] [STARTUP] Attempt 1/15: Checking http://localhost:8080/
+[2025-08-30 18:38:29] [STARTUP] SUCCESS: Vector Engine is ready at http://localhost:8080/
+[2025-08-30 18:38:29] [STARTUP] SUCCESS: Vector Engine is ready at http://localhost:8080/
+[0;32m[INFO][0m Vector Engine is ready!
+[2025-08-30 18:38:29] [STARTUP] Vector Engine is ready!
+[2025-08-30 18:38:29] [STARTUP] Vector Engine is ready!
+[0;32m[INFO][0m 
+[2025-08-30 18:38:29] [STARTUP] 
+[2025-08-30 18:38:29] [STARTUP] 
+[0;32m[INFO][0m 🚀 System startup process completed.
+[2025-08-30 18:38:29] [STARTUP] 🚀 System startup process completed.
+[2025-08-30 18:38:29] [STARTUP] 🚀 System startup process completed.
+[0;32m[INFO][0m    🧠 Orchestrator: http://localhost:8001
+[2025-08-30 18:38:29] [STARTUP]    🧠 Orchestrator: http://localhost:8001
+[2025-08-30 18:38:29] [STARTUP]    🧠 Orchestrator: http://localhost:8001
+[0;32m[INFO][0m    🤖 Model Gateway: http://localhost:8070
+[2025-08-30 18:38:29] [STARTUP]    🤖 Model Gateway: http://localhost:8070
+[2025-08-30 18:38:29] [STARTUP]    🤖 Model Gateway: http://localhost:8070
+[0;32m[INFO][0m    🧭 Vector Engine: http://localhost:8080
+[2025-08-30 18:38:29] [STARTUP]    🧭 Vector Engine: http://localhost:8080
+[2025-08-30 18:38:29] [STARTUP]    🧭 Vector Engine: http://localhost:8080
+[0;32m[INFO][0m 
+[2025-08-30 18:38:29] [STARTUP] 
+[2025-08-30 18:38:29] [STARTUP] 
+[0;32m[INFO][0m Useful commands:
+[2025-08-30 18:38:29] [STARTUP] Useful commands:
+[2025-08-30 18:38:29] [STARTUP] Useful commands:
+[0;32m[INFO][0m    📊 Check status: ./shared/scripts/status.sh
+[2025-08-30 18:38:29] [STARTUP]    📊 Check status: ./shared/scripts/status.sh
+[2025-08-30 18:38:29] [STARTUP]    📊 Check status: ./shared/scripts/status.sh
+[0;32m[INFO][0m    🧪 Test system: ./shared/scripts/test-system.sh
+[2025-08-30 18:38:29] [STARTUP]    🧪 Test system: ./shared/scripts/test-system.sh
+[2025-08-30 18:38:29] [STARTUP]    🧪 Test system: ./shared/scripts/test-system.sh
+[0;32m[INFO][0m    ⏹️ Stop system: ./shared/scripts/stop-system.sh
+[2025-08-30 18:38:29] [STARTUP]    ⏹️ Stop system: ./shared/scripts/stop-system.sh
+[2025-08-30 18:38:29] [STARTUP]    ⏹️ Stop system: ./shared/scripts/stop-system.sh
+[0;32m[INFO][0m 
+[2025-08-30 18:38:29] [STARTUP] 
+[2025-08-30 18:38:29] [STARTUP] 
+[0;32m[INFO][0m Startup log file: logs/start-system-20250830-183822.log
+[2025-08-30 18:38:29] [STARTUP] Startup log file: logs/start-system-20250830-183822.log
+[2025-08-30 18:38:29] [STARTUP] Startup log file: logs/start-system-20250830-183822.log
+[0;32m[INFO][0m Service log files are in the logs/ directory
+[2025-08-30 18:38:29] [STARTUP] Service log files are in the logs/ directory
+[2025-08-30 18:38:29] [STARTUP] Service log files are in the logs/ directory
+[2025-08-30 18:38:29] [STARTUP] === Start System Script Completed ===
+[2025-08-30 18:38:29] [STARTUP] === Start System Script Completed ===

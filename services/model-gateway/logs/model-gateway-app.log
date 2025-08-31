@@ -1,0 +1,824 @@
+2025-08-30 17:41:49,257 - model_gateway - INFO - Model Gateway logging initialized.
+2025-08-30 17:41:49,259 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:41:49,260 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:41:49,275 - model_gateway - INFO - Starting Model Gateway application...
+2025-08-30 17:41:49,276 - asyncio - DEBUG - Using selector: EpollSelector
+2025-08-30 17:41:49,279 - model_gateway - INFO - Model Gateway service is starting up...
+2025-08-30 17:41:49,279 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:41:49,280 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:41:49,298 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2025-08-30 17:41:49,300 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f8811d4a270>
+2025-08-30 17:41:49,300 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:41:49,300 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:41:49,300 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:41:49,300 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:41:49,300 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:41:49,301 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:41:49 GMT'), (b'Content-Length', b'94')])
+2025-08-30 17:41:49,301 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 500 Internal Server Error"
+2025-08-30 17:41:49,301 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:41:49,301 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:41:49,301 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:41:49,301 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:41:49,301 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:41:49,302 - httpcore.connection - DEBUG - close.complete
+2025-08-30 17:41:49,302 - model_gateway - ERROR - Failed to connect to Ollama API on startup: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/tags'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-30 17:42:28,898 - model_gateway - INFO - Model Gateway logging initialized.
+2025-08-30 17:42:28,900 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:42:28,902 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:42:28,918 - model_gateway - INFO - Starting Model Gateway application...
+2025-08-30 17:42:28,919 - asyncio - DEBUG - Using selector: EpollSelector
+2025-08-30 17:42:28,921 - model_gateway - INFO - Model Gateway service is starting up...
+2025-08-30 17:42:28,921 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:42:28,922 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:42:28,939 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2025-08-30 17:42:28,941 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f4795816270>
+2025-08-30 17:42:28,941 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:42:28,941 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:42:28,942 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:42:28,942 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:42:28,942 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:42:28,942 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:42:28 GMT'), (b'Content-Length', b'94')])
+2025-08-30 17:42:28,942 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 500 Internal Server Error"
+2025-08-30 17:42:28,943 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:42:28,943 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:42:28,943 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:42:28,943 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:42:28,943 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:42:28,943 - httpcore.connection - DEBUG - close.complete
+2025-08-30 17:42:28,943 - model_gateway - ERROR - Failed to connect to Ollama API on startup: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/tags'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-30 17:43:10,666 - model_gateway - INFO - Model Gateway logging initialized.
+2025-08-30 17:43:10,668 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:43:10,669 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:43:10,685 - model_gateway - INFO - Starting Model Gateway application...
+2025-08-30 17:43:10,686 - asyncio - DEBUG - Using selector: EpollSelector
+2025-08-30 17:43:10,688 - model_gateway - INFO - Model Gateway service is starting up...
+2025-08-30 17:43:10,688 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:43:10,689 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:43:10,706 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2025-08-30 17:43:10,708 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f20568b2270>
+2025-08-30 17:43:10,709 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:43:10,709 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:43:10,709 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:43:10,709 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:43:10,709 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:43:10,709 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:43:10 GMT'), (b'Content-Length', b'94')])
+2025-08-30 17:43:10,709 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 500 Internal Server Error"
+2025-08-30 17:43:10,709 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:43:10,710 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:43:10,710 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:43:10,710 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:43:10,710 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:43:10,710 - httpcore.connection - DEBUG - close.complete
+2025-08-30 17:43:10,710 - model_gateway - ERROR - Failed to connect to Ollama API on startup: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/tags'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-30 17:44:37,497 - model_gateway - INFO - Model Gateway logging initialized.
+2025-08-30 17:44:37,499 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:44:37,501 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:44:37,517 - model_gateway - INFO - Starting Model Gateway application...
+2025-08-30 17:44:37,517 - asyncio - DEBUG - Using selector: EpollSelector
+2025-08-30 17:44:37,520 - model_gateway - INFO - Model Gateway service is starting up...
+2025-08-30 17:44:37,520 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:44:37,520 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:44:37,536 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2025-08-30 17:44:37,538 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f06fc2ea270>
+2025-08-30 17:44:37,538 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:44:37,539 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:44:37,539 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:44:37,539 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:44:37,539 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:44:37,539 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:44:37 GMT'), (b'Content-Length', b'94')])
+2025-08-30 17:44:37,539 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 500 Internal Server Error"
+2025-08-30 17:44:37,539 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:44:37,539 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:44:37,539 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:44:37,540 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:44:37,540 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:44:37,540 - httpcore.connection - DEBUG - close.complete
+2025-08-30 17:44:37,540 - model_gateway - ERROR - Failed to connect to Ollama API on startup: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/tags'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-30 17:45:20,410 - model_gateway - INFO - Model Gateway logging initialized.
+2025-08-30 17:45:20,412 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:45:20,413 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:45:20,429 - model_gateway - INFO - Starting Model Gateway application...
+2025-08-30 17:45:20,429 - asyncio - DEBUG - Using selector: EpollSelector
+2025-08-30 17:45:20,432 - model_gateway - INFO - Model Gateway service is starting up...
+2025-08-30 17:45:20,432 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:45:20,432 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:45:20,448 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2025-08-30 17:45:20,450 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7faa42bbe270>
+2025-08-30 17:45:20,450 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:45:20,451 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:45:20,451 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:45:20,451 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:45:20,451 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:45:20,451 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:45:20 GMT'), (b'Content-Length', b'94')])
+2025-08-30 17:45:20,452 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 500 Internal Server Error"
+2025-08-30 17:45:20,452 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:45:20,452 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:45:20,452 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:45:20,452 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:45:20,452 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:45:20,452 - httpcore.connection - DEBUG - close.complete
+2025-08-30 17:45:20,453 - model_gateway - ERROR - Failed to connect to Ollama API on startup: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/tags'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-30 17:46:09,652 - model_gateway - INFO - Model Gateway logging initialized.
+2025-08-30 17:46:09,654 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:46:09,655 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:46:09,671 - model_gateway - INFO - Starting Model Gateway application...
+2025-08-30 17:46:09,671 - asyncio - DEBUG - Using selector: EpollSelector
+2025-08-30 17:46:09,674 - model_gateway - INFO - Model Gateway service is starting up...
+2025-08-30 17:46:09,674 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:46:09,674 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:46:09,691 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2025-08-30 17:46:09,693 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fd062e0e270>
+2025-08-30 17:46:09,694 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:46:09,694 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:46:09,694 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:46:09,694 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:46:09,694 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:46:09,694 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:46:09 GMT'), (b'Content-Length', b'94')])
+2025-08-30 17:46:09,695 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 500 Internal Server Error"
+2025-08-30 17:46:09,695 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:46:09,695 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:46:09,695 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:46:09,695 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:46:09,695 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:46:09,695 - httpcore.connection - DEBUG - close.complete
+2025-08-30 17:46:09,695 - model_gateway - ERROR - Failed to connect to Ollama API on startup: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/tags'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-30 17:46:11,518 - model_gateway - DEBUG - Health check endpoint called.
+2025-08-30 17:46:11,518 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:46:11,518 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:46:11,532 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=5.0 socket_options=None
+2025-08-30 17:46:11,534 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fd062e5c690>
+2025-08-30 17:46:11,534 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:46:11,534 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:46:11,534 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:46:11,534 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:46:11,534 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:46:11,534 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:46:11 GMT'), (b'Content-Length', b'17')])
+2025-08-30 17:46:11,535 - httpx - INFO - HTTP Request: GET http://localhost:11434/ "HTTP/1.1 200 OK"
+2025-08-30 17:46:11,535 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:46:11,535 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:46:11,535 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:46:11,535 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:46:11,535 - model_gateway - INFO - Health check: Model Gateway and Ollama connection OK.
+2025-08-30 17:46:11,535 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:46:11,535 - httpcore.connection - DEBUG - close.complete
+2025-08-30 17:46:11,535 - model_gateway - ERROR - Health check failed: Error connecting to Ollama: name 'datetime' is not defined
+2025-08-30 17:46:13,546 - model_gateway - DEBUG - Health check endpoint called.
+2025-08-30 17:46:13,546 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:46:13,547 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:46:13,562 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=5.0 socket_options=None
+2025-08-30 17:46:13,563 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fd062e5f610>
+2025-08-30 17:46:13,564 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:46:13,564 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:46:13,564 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:46:13,564 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:46:13,564 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:46:13,564 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:46:13 GMT'), (b'Content-Length', b'17')])
+2025-08-30 17:46:13,564 - httpx - INFO - HTTP Request: GET http://localhost:11434/ "HTTP/1.1 200 OK"
+2025-08-30 17:46:13,564 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:46:13,564 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:46:13,564 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:46:13,564 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:46:13,564 - model_gateway - INFO - Health check: Model Gateway and Ollama connection OK.
+2025-08-30 17:46:13,564 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:46:13,565 - httpcore.connection - DEBUG - close.complete
+2025-08-30 17:46:13,565 - model_gateway - ERROR - Health check failed: Error connecting to Ollama: name 'datetime' is not defined
+2025-08-30 17:46:50,762 - model_gateway - INFO - Model Gateway logging initialized.
+2025-08-30 17:46:50,764 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:46:50,765 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:46:50,782 - model_gateway - INFO - Starting Model Gateway application...
+2025-08-30 17:46:50,783 - asyncio - DEBUG - Using selector: EpollSelector
+2025-08-30 17:46:50,785 - model_gateway - INFO - Model Gateway service is starting up...
+2025-08-30 17:46:50,786 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:46:50,786 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:46:50,803 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2025-08-30 17:46:50,805 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fcee0092270>
+2025-08-30 17:46:50,805 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:46:50,805 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:46:50,805 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:46:50,805 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:46:50,805 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:46:50,806 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:46:50 GMT'), (b'Content-Length', b'94')])
+2025-08-30 17:46:50,806 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 500 Internal Server Error"
+2025-08-30 17:46:50,806 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:46:50,806 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:46:50,806 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:46:50,806 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:46:50,806 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:46:50,806 - httpcore.connection - DEBUG - close.complete
+2025-08-30 17:46:50,807 - model_gateway - ERROR - Failed to connect to Ollama API on startup: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/tags'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-30 17:46:52,643 - model_gateway - DEBUG - Health check endpoint called.
+2025-08-30 17:46:52,643 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:46:52,644 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:46:52,658 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=5.0 socket_options=None
+2025-08-30 17:46:52,659 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fcee00e0690>
+2025-08-30 17:46:52,659 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:46:52,659 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:46:52,659 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:46:52,659 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:46:52,659 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:46:52,660 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:46:52 GMT'), (b'Content-Length', b'17')])
+2025-08-30 17:46:52,660 - httpx - INFO - HTTP Request: GET http://localhost:11434/ "HTTP/1.1 200 OK"
+2025-08-30 17:46:52,660 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:46:52,660 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:46:52,660 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:46:52,660 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:46:52,660 - model_gateway - INFO - Health check: Model Gateway and Ollama connection OK.
+2025-08-30 17:46:52,660 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:46:52,660 - httpcore.connection - DEBUG - close.complete
+2025-08-30 17:46:52,660 - model_gateway - ERROR - Health check failed: Error connecting to Ollama: module 'datetime' has no attribute 'utcnow'
+2025-08-30 17:46:54,671 - model_gateway - DEBUG - Health check endpoint called.
+2025-08-30 17:46:54,672 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:46:54,672 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:46:54,688 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=5.0 socket_options=None
+2025-08-30 17:46:54,689 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fcee00e3610>
+2025-08-30 17:46:54,689 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:46:54,689 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:46:54,689 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:46:54,689 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:46:54,689 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:46:54,690 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:46:54 GMT'), (b'Content-Length', b'17')])
+2025-08-30 17:46:54,690 - httpx - INFO - HTTP Request: GET http://localhost:11434/ "HTTP/1.1 200 OK"
+2025-08-30 17:46:54,690 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:46:54,690 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:46:54,690 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:46:54,690 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:46:54,690 - model_gateway - INFO - Health check: Model Gateway and Ollama connection OK.
+2025-08-30 17:46:54,690 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:46:54,690 - httpcore.connection - DEBUG - close.complete
+2025-08-30 17:46:54,690 - model_gateway - ERROR - Health check failed: Error connecting to Ollama: module 'datetime' has no attribute 'utcnow'
+2025-08-30 17:47:08,568 - model_gateway - INFO - Model Gateway logging initialized.
+2025-08-30 17:47:08,570 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:47:08,571 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:47:08,586 - model_gateway - INFO - Starting Model Gateway application...
+2025-08-30 17:47:08,587 - asyncio - DEBUG - Using selector: EpollSelector
+2025-08-30 17:47:08,590 - model_gateway - INFO - Model Gateway service is starting up...
+2025-08-30 17:47:08,590 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:47:08,590 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:47:08,606 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2025-08-30 17:47:08,608 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fef0341a270>
+2025-08-30 17:47:08,608 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:47:08,609 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:47:08,609 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:47:08,609 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:47:08,609 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:47:08,609 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:47:08 GMT'), (b'Content-Length', b'94')])
+2025-08-30 17:47:08,609 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 500 Internal Server Error"
+2025-08-30 17:47:08,609 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:47:08,610 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:47:08,610 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:47:08,610 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:47:08,610 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:47:08,610 - httpcore.connection - DEBUG - close.complete
+2025-08-30 17:47:08,610 - model_gateway - ERROR - Failed to connect to Ollama API on startup: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/tags'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-30 17:47:10,439 - model_gateway - DEBUG - Health check endpoint called.
+2025-08-30 17:47:10,440 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:47:10,440 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:47:10,455 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=5.0 socket_options=None
+2025-08-30 17:47:10,456 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fef02988690>
+2025-08-30 17:47:10,456 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:47:10,456 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:47:10,456 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:47:10,456 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:47:10,456 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:47:10,456 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:47:10 GMT'), (b'Content-Length', b'17')])
+2025-08-30 17:47:10,457 - httpx - INFO - HTTP Request: GET http://localhost:11434/ "HTTP/1.1 200 OK"
+2025-08-30 17:47:10,457 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:47:10,457 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:47:10,457 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:47:10,457 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:47:10,457 - model_gateway - INFO - Health check: Model Gateway and Ollama connection OK.
+2025-08-30 17:47:10,457 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:47:10,457 - httpcore.connection - DEBUG - close.complete
+2025-08-30 17:48:37,539 - model_gateway - INFO - Model Gateway logging initialized.
+2025-08-30 17:48:37,541 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:48:37,542 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:48:37,558 - model_gateway - INFO - Starting Model Gateway application...
+2025-08-30 17:48:37,559 - asyncio - DEBUG - Using selector: EpollSelector
+2025-08-30 17:48:37,561 - model_gateway - INFO - Model Gateway service is starting up...
+2025-08-30 17:48:37,561 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:48:37,562 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:48:37,578 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2025-08-30 17:48:37,580 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f5c41d1a270>
+2025-08-30 17:48:37,580 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:48:37,580 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:48:37,580 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:48:37,580 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:48:37,580 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:48:37,581 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:48:37 GMT'), (b'Content-Length', b'94')])
+2025-08-30 17:48:37,581 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 500 Internal Server Error"
+2025-08-30 17:48:37,581 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:48:37,581 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:48:37,581 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:48:37,581 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:48:37,581 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:48:37,581 - httpcore.connection - DEBUG - close.complete
+2025-08-30 17:48:37,582 - model_gateway - ERROR - Failed to connect to Ollama API on startup: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/tags'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-30 17:48:39,413 - model_gateway - DEBUG - Health check endpoint called.
+2025-08-30 17:48:39,414 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:48:39,414 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:48:39,428 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=5.0 socket_options=None
+2025-08-30 17:48:39,429 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f5c4128c690>
+2025-08-30 17:48:39,429 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:48:39,430 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:48:39,430 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:48:39,430 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:48:39,430 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:48:39,430 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:48:39 GMT'), (b'Content-Length', b'17')])
+2025-08-30 17:48:39,430 - httpx - INFO - HTTP Request: GET http://localhost:11434/ "HTTP/1.1 200 OK"
+2025-08-30 17:48:39,430 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:48:39,430 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:48:39,430 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:48:39,430 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:48:39,430 - model_gateway - INFO - Health check: Model Gateway and Ollama connection OK.
+2025-08-30 17:48:39,431 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:48:39,431 - httpcore.connection - DEBUG - close.complete
+2025-08-30 17:54:06,091 - model_gateway - INFO - Model Gateway logging initialized.
+2025-08-30 17:54:06,094 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:54:06,095 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:54:06,112 - model_gateway - INFO - Starting Model Gateway application...
+2025-08-30 17:54:06,113 - asyncio - DEBUG - Using selector: EpollSelector
+2025-08-30 17:54:06,116 - model_gateway - INFO - Model Gateway service is starting up...
+2025-08-30 17:54:06,116 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:54:06,117 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:54:06,133 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2025-08-30 17:54:06,136 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7ff606ee6270>
+2025-08-30 17:54:06,136 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:54:06,136 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:54:06,136 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:54:06,136 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:54:06,136 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:54:06,136 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:54:06 GMT'), (b'Content-Length', b'94')])
+2025-08-30 17:54:06,137 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 500 Internal Server Error"
+2025-08-30 17:54:06,137 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:54:06,137 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:54:06,137 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:54:06,137 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:54:06,137 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:54:06,137 - httpcore.connection - DEBUG - close.complete
+2025-08-30 17:54:06,137 - model_gateway - ERROR - Failed to connect to Ollama API on startup: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/tags'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-30 17:54:07,957 - model_gateway - DEBUG - Health check endpoint called.
+2025-08-30 17:54:07,957 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:54:07,958 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:54:07,973 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=5.0 socket_options=None
+2025-08-30 17:54:07,975 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7ff606f34690>
+2025-08-30 17:54:07,975 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:54:07,975 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:54:07,975 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:54:07,975 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:54:07,975 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:54:07,975 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:54:07 GMT'), (b'Content-Length', b'17')])
+2025-08-30 17:54:07,976 - httpx - INFO - HTTP Request: GET http://localhost:11434/ "HTTP/1.1 200 OK"
+2025-08-30 17:54:07,976 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:54:07,976 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:54:07,976 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:54:07,976 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:54:07,976 - model_gateway - INFO - Health check: Model Gateway and Ollama connection OK.
+2025-08-30 17:54:07,976 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:54:07,976 - httpcore.connection - DEBUG - close.complete
+2025-08-30 17:54:21,026 - model_gateway - DEBUG - Health check endpoint called.
+2025-08-30 17:54:21,026 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 17:54:21,027 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 17:54:21,041 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=5.0 socket_options=None
+2025-08-30 17:54:21,042 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7ff606f37610>
+2025-08-30 17:54:21,042 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 17:54:21,043 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 17:54:21,043 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 17:54:21,043 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 17:54:21,043 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 17:54:21,043 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 22:54:21 GMT'), (b'Content-Length', b'17')])
+2025-08-30 17:54:21,043 - httpx - INFO - HTTP Request: GET http://localhost:11434/ "HTTP/1.1 200 OK"
+2025-08-30 17:54:21,043 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 17:54:21,043 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 17:54:21,043 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 17:54:21,043 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 17:54:21,044 - model_gateway - INFO - Health check: Model Gateway and Ollama connection OK.
+2025-08-30 17:54:21,044 - httpcore.connection - DEBUG - close.started
+2025-08-30 17:54:21,044 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:05:54,203 - model_gateway - INFO - Model Gateway logging initialized.
+2025-08-30 18:05:54,206 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:05:54,207 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:05:54,224 - model_gateway - INFO - Starting Model Gateway application...
+2025-08-30 18:05:54,224 - asyncio - DEBUG - Using selector: EpollSelector
+2025-08-30 18:05:54,227 - model_gateway - INFO - Model Gateway service is starting up...
+2025-08-30 18:05:54,227 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:05:54,227 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:05:54,244 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2025-08-30 18:05:54,247 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fd3f880a270>
+2025-08-30 18:05:54,247 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 18:05:54,247 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:05:54,247 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 18:05:54,248 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:05:54,248 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 18:05:54,248 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:05:54 GMT'), (b'Content-Length', b'94')])
+2025-08-30 18:05:54,248 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 500 Internal Server Error"
+2025-08-30 18:05:54,248 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 18:05:54,249 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:05:54,249 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:05:54,249 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:05:54,249 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:05:54,249 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:05:54,249 - model_gateway - ERROR - Failed to connect to Ollama API on startup: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/tags'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-30 18:09:10,668 - model_gateway - INFO - Model Gateway logging initialized.
+2025-08-30 18:09:10,670 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:09:10,671 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:09:10,686 - model_gateway - INFO - Starting Model Gateway application...
+2025-08-30 18:09:10,687 - asyncio - DEBUG - Using selector: EpollSelector
+2025-08-30 18:09:10,690 - model_gateway - INFO - Model Gateway service is starting up...
+2025-08-30 18:09:10,690 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:09:10,691 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:09:10,708 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2025-08-30 18:09:10,710 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f5698212270>
+2025-08-30 18:09:10,710 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 18:09:10,710 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:09:10,710 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 18:09:10,710 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:09:10,710 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 18:09:10,711 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:09:10 GMT'), (b'Content-Length', b'94')])
+2025-08-30 18:09:10,711 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 500 Internal Server Error"
+2025-08-30 18:09:10,711 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 18:09:10,711 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:09:10,711 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:09:10,711 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:09:10,711 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:09:10,712 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:09:10,712 - model_gateway - ERROR - Failed to connect to Ollama API on startup: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/tags'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-30 18:10:02,420 - model_gateway - INFO - Model Gateway logging initialized.
+2025-08-30 18:10:02,422 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:10:02,423 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:10:02,439 - model_gateway - INFO - Starting Model Gateway application...
+2025-08-30 18:10:02,440 - asyncio - DEBUG - Using selector: EpollSelector
+2025-08-30 18:10:02,443 - model_gateway - INFO - Model Gateway service is starting up...
+2025-08-30 18:10:02,443 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:10:02,443 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:10:02,460 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2025-08-30 18:10:02,462 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f4c317e2270>
+2025-08-30 18:10:02,462 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 18:10:02,462 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:10:02,462 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 18:10:02,462 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:10:02,462 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 18:10:02,463 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:10:02 GMT'), (b'Content-Length', b'94')])
+2025-08-30 18:10:02,463 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 500 Internal Server Error"
+2025-08-30 18:10:02,463 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 18:10:02,463 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:10:02,463 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:10:02,463 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:10:02,464 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:10:02,464 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:10:02,464 - model_gateway - ERROR - Failed to connect to Ollama API on startup: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/tags'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-30 18:10:37,949 - model_gateway - INFO - Model Gateway logging initialized.
+2025-08-30 18:10:37,952 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:10:37,953 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:10:37,970 - model_gateway - INFO - Starting Model Gateway application...
+2025-08-30 18:10:37,971 - asyncio - DEBUG - Using selector: EpollSelector
+2025-08-30 18:10:37,973 - model_gateway - INFO - Model Gateway service is starting up...
+2025-08-30 18:10:37,973 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:10:37,974 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:10:37,990 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2025-08-30 18:10:37,992 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fb02d0ee270>
+2025-08-30 18:10:37,992 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 18:10:37,992 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:10:37,993 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 18:10:37,993 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:10:37,993 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 18:10:37,993 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:10:37 GMT'), (b'Content-Length', b'94')])
+2025-08-30 18:10:37,993 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 500 Internal Server Error"
+2025-08-30 18:10:37,993 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 18:10:37,993 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:10:37,993 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:10:37,993 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:10:37,994 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:10:37,994 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:10:37,994 - model_gateway - ERROR - Failed to connect to Ollama API on startup: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/tags'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-30 18:13:09,435 - model_gateway - INFO - Model Gateway logging initialized.
+2025-08-30 18:13:09,437 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:13:09,438 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:13:09,455 - model_gateway - INFO - Starting Model Gateway application...
+2025-08-30 18:13:09,456 - asyncio - DEBUG - Using selector: EpollSelector
+2025-08-30 18:13:09,458 - model_gateway - INFO - Model Gateway service is starting up...
+2025-08-30 18:13:09,459 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:13:09,459 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:13:09,476 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2025-08-30 18:13:09,478 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f74c5eb2270>
+2025-08-30 18:13:09,479 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 18:13:09,479 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:13:09,479 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 18:13:09,479 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:13:09,479 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 18:13:09,479 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:13:09 GMT'), (b'Content-Length', b'94')])
+2025-08-30 18:13:09,480 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 500 Internal Server Error"
+2025-08-30 18:13:09,480 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 18:13:09,480 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:13:09,480 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:13:09,480 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:13:09,480 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:13:09,480 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:13:09,480 - model_gateway - ERROR - Failed to connect to Ollama API on startup: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/tags'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-30 18:13:39,765 - model_gateway - INFO - Model Gateway logging initialized.
+2025-08-30 18:13:39,767 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:13:39,768 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:13:39,784 - model_gateway - INFO - Starting Model Gateway application...
+2025-08-30 18:13:39,785 - asyncio - DEBUG - Using selector: EpollSelector
+2025-08-30 18:13:39,787 - model_gateway - INFO - Model Gateway service is starting up...
+2025-08-30 18:13:39,787 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:13:39,788 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:13:39,804 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2025-08-30 18:13:39,806 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f37052b2270>
+2025-08-30 18:13:39,807 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 18:13:39,807 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:13:39,807 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 18:13:39,807 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:13:39,807 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 18:13:39,807 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:13:39 GMT'), (b'Content-Length', b'94')])
+2025-08-30 18:13:39,808 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 500 Internal Server Error"
+2025-08-30 18:13:39,808 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 18:13:39,808 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:13:39,808 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:13:39,808 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:13:39,808 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:13:39,808 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:13:39,808 - model_gateway - ERROR - Failed to connect to Ollama API on startup: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/tags'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-30 18:13:41,628 - model_gateway - DEBUG - Health check endpoint called.
+2025-08-30 18:13:41,629 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:13:41,629 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:13:41,646 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=5.0 socket_options=None
+2025-08-30 18:13:41,647 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f3705300690>
+2025-08-30 18:13:41,647 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 18:13:41,647 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:13:41,647 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 18:13:41,648 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:13:41,648 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 18:13:41,648 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:13:41 GMT'), (b'Content-Length', b'17')])
+2025-08-30 18:13:41,648 - httpx - INFO - HTTP Request: GET http://localhost:11434/ "HTTP/1.1 200 OK"
+2025-08-30 18:13:41,648 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 18:13:41,648 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:13:41,648 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:13:41,648 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:13:41,648 - model_gateway - INFO - Health check: Model Gateway and Ollama connection OK.
+2025-08-30 18:13:41,648 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:13:41,649 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:13:51,213 - model_gateway - DEBUG - Health check endpoint called.
+2025-08-30 18:13:51,214 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:13:51,214 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:13:51,230 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=5.0 socket_options=None
+2025-08-30 18:13:51,231 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f3705303610>
+2025-08-30 18:13:51,231 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 18:13:51,232 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:13:51,232 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 18:13:51,232 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:13:51,232 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 18:13:51,232 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:13:51 GMT'), (b'Content-Length', b'17')])
+2025-08-30 18:13:51,232 - httpx - INFO - HTTP Request: GET http://localhost:11434/ "HTTP/1.1 200 OK"
+2025-08-30 18:13:51,232 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 18:13:51,232 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:13:51,232 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:13:51,232 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:13:51,232 - model_gateway - INFO - Health check: Model Gateway and Ollama connection OK.
+2025-08-30 18:13:51,232 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:13:51,232 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:30:20,274 - model_gateway - DEBUG - Health check endpoint called.
+2025-08-30 18:30:20,274 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:30:20,274 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:30:20,288 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=5.0 socket_options=None
+2025-08-30 18:30:20,290 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f370483d810>
+2025-08-30 18:30:20,290 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 18:30:20,290 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:30:20,290 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 18:30:20,290 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:30:20,290 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 18:30:20,290 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:30:20 GMT'), (b'Content-Length', b'17')])
+2025-08-30 18:30:20,291 - httpx - INFO - HTTP Request: GET http://localhost:11434/ "HTTP/1.1 200 OK"
+2025-08-30 18:30:20,291 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 18:30:20,291 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:30:20,291 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:30:20,291 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:30:20,291 - model_gateway - INFO - Health check: Model Gateway and Ollama connection OK.
+2025-08-30 18:30:20,291 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:30:20,291 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:30:20,310 - model_gateway - INFO - Received generation request for model 'llama2'
+2025-08-30 18:30:20,310 - model_gateway - DEBUG - Request details: prompt='OK...', stream=False, params={}
+2025-08-30 18:30:20,311 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:30:20,311 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:30:20,326 - model_gateway - DEBUG - Forwarding request to Ollama: {'model': 'llama2', 'prompt': 'OK', 'stream': False, 'options': {}}
+2025-08-30 18:30:20,327 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=300.0 socket_options=None
+2025-08-30 18:30:20,329 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f370484c180>
+2025-08-30 18:30:20,329 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-08-30 18:30:20,329 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:30:20,329 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-08-30 18:30:20,329 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:30:20,329 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-08-30 18:30:20,338 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 404, b'Not Found', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:30:20 GMT'), (b'Content-Length', b'36')])
+2025-08-30 18:30:20,338 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 404 Not Found"
+2025-08-30 18:30:20,338 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-08-30 18:30:20,339 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:30:20,339 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:30:20,339 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:30:20,339 - model_gateway - DEBUG - Received response from Ollama: Status 404
+2025-08-30 18:30:20,339 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:30:20,339 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:30:20,339 - model_gateway - ERROR - Ollama returned error 404: {"error":"model 'llama2' not found"}
+2025-08-30 18:31:35,444 - model_gateway - DEBUG - Health check endpoint called.
+2025-08-30 18:31:35,445 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:31:35,445 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:31:35,466 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=5.0 socket_options=None
+2025-08-30 18:31:35,470 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f37052372f0>
+2025-08-30 18:31:35,470 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 18:31:35,470 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:31:35,471 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 18:31:35,471 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:31:35,471 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 18:31:35,471 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:31:35 GMT'), (b'Content-Length', b'17')])
+2025-08-30 18:31:35,471 - httpx - INFO - HTTP Request: GET http://localhost:11434/ "HTTP/1.1 200 OK"
+2025-08-30 18:31:35,471 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 18:31:35,471 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:31:35,471 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:31:35,471 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:31:35,472 - model_gateway - INFO - Health check: Model Gateway and Ollama connection OK.
+2025-08-30 18:31:35,472 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:31:35,472 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:31:35,494 - model_gateway - INFO - Received generation request for model 'llama2'
+2025-08-30 18:31:35,495 - model_gateway - DEBUG - Request details: prompt='OK...', stream=False, params={}
+2025-08-30 18:31:35,495 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:31:35,495 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:31:35,510 - model_gateway - DEBUG - Forwarding request to Ollama: {'model': 'llama2', 'prompt': 'OK', 'stream': False, 'options': {}}
+2025-08-30 18:31:35,510 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=300.0 socket_options=None
+2025-08-30 18:31:35,512 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f37052f8c00>
+2025-08-30 18:31:35,512 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-08-30 18:31:35,512 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:31:35,512 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-08-30 18:31:35,512 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:31:35,512 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-08-30 18:31:35,512 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 404, b'Not Found', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:31:35 GMT'), (b'Content-Length', b'36')])
+2025-08-30 18:31:35,512 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 404 Not Found"
+2025-08-30 18:31:35,512 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-08-30 18:31:35,513 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:31:35,513 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:31:35,513 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:31:35,513 - model_gateway - DEBUG - Received response from Ollama: Status 404
+2025-08-30 18:31:35,513 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:31:35,513 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:31:35,513 - model_gateway - ERROR - Ollama returned error 404: {"error":"model 'llama2' not found"}
+2025-08-30 18:32:52,692 - model_gateway - DEBUG - Health check endpoint called.
+2025-08-30 18:32:52,692 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:32:52,692 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:32:52,706 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=5.0 socket_options=None
+2025-08-30 18:32:52,707 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f3704855480>
+2025-08-30 18:32:52,708 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 18:32:52,708 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:32:52,708 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 18:32:52,708 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:32:52,708 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 18:32:52,708 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:32:52 GMT'), (b'Content-Length', b'17')])
+2025-08-30 18:32:52,708 - httpx - INFO - HTTP Request: GET http://localhost:11434/ "HTTP/1.1 200 OK"
+2025-08-30 18:32:52,708 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 18:32:52,708 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:32:52,708 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:32:52,708 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:32:52,708 - model_gateway - INFO - Health check: Model Gateway and Ollama connection OK.
+2025-08-30 18:32:52,708 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:32:52,709 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:32:52,809 - model_gateway - DEBUG - Health check endpoint called.
+2025-08-30 18:32:52,809 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:32:52,809 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:32:52,824 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=5.0 socket_options=None
+2025-08-30 18:32:52,825 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f3705310c50>
+2025-08-30 18:32:52,826 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 18:32:52,826 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:32:52,826 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 18:32:52,826 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:32:52,826 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 18:32:52,826 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:32:52 GMT'), (b'Content-Length', b'17')])
+2025-08-30 18:32:52,826 - httpx - INFO - HTTP Request: GET http://localhost:11434/ "HTTP/1.1 200 OK"
+2025-08-30 18:32:52,826 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 18:32:52,826 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:32:52,827 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:32:52,827 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:32:52,827 - model_gateway - INFO - Health check: Model Gateway and Ollama connection OK.
+2025-08-30 18:32:52,827 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:32:52,827 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:32:52,846 - model_gateway - INFO - Received generation request for model 'llama2'
+2025-08-30 18:32:52,846 - model_gateway - DEBUG - Request details: prompt='OK...', stream=False, params={}
+2025-08-30 18:32:52,846 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:32:52,846 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:32:52,860 - model_gateway - DEBUG - Forwarding request to Ollama: {'model': 'llama2', 'prompt': 'OK', 'stream': False, 'options': {}}
+2025-08-30 18:32:52,860 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=300.0 socket_options=None
+2025-08-30 18:32:52,861 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f3705312a50>
+2025-08-30 18:32:52,862 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-08-30 18:32:52,862 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:32:52,862 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-08-30 18:32:52,862 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:32:52,862 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-08-30 18:32:52,862 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 404, b'Not Found', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:32:52 GMT'), (b'Content-Length', b'36')])
+2025-08-30 18:32:52,862 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 404 Not Found"
+2025-08-30 18:32:52,862 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-08-30 18:32:52,862 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:32:52,862 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:32:52,862 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:32:52,862 - model_gateway - DEBUG - Received response from Ollama: Status 404
+2025-08-30 18:32:52,862 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:32:52,863 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:32:52,863 - model_gateway - ERROR - Ollama returned error 404: {"error":"model 'llama2' not found"}
+2025-08-30 18:38:27,349 - model_gateway - INFO - Model Gateway logging initialized.
+2025-08-30 18:38:27,352 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:38:27,354 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:38:27,371 - model_gateway - INFO - Starting Model Gateway application...
+2025-08-30 18:38:27,371 - asyncio - DEBUG - Using selector: EpollSelector
+2025-08-30 18:38:27,374 - model_gateway - INFO - Model Gateway service is starting up...
+2025-08-30 18:38:27,374 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:38:27,375 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:38:27,393 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2025-08-30 18:38:27,395 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fd3baa06270>
+2025-08-30 18:38:27,396 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 18:38:27,396 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:38:27,396 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 18:38:27,396 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:38:27,396 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 18:38:27,396 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:38:27 GMT'), (b'Content-Length', b'94')])
+2025-08-30 18:38:27,396 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 500 Internal Server Error"
+2025-08-30 18:38:27,397 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 18:38:27,397 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:38:27,397 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:38:27,397 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:38:27,397 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:38:27,397 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:38:27,397 - model_gateway - ERROR - Failed to connect to Ollama API on startup: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/tags'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-30 18:38:29,185 - model_gateway - DEBUG - Health check endpoint called.
+2025-08-30 18:38:29,185 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:38:29,186 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:38:29,200 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=5.0 socket_options=None
+2025-08-30 18:38:29,201 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fd3baa54690>
+2025-08-30 18:38:29,201 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-08-30 18:38:29,202 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:38:29,202 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-08-30 18:38:29,202 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:38:29,202 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-08-30 18:38:29,202 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:38:29 GMT'), (b'Content-Length', b'17')])
+2025-08-30 18:38:29,202 - httpx - INFO - HTTP Request: GET http://localhost:11434/ "HTTP/1.1 200 OK"
+2025-08-30 18:38:29,202 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-08-30 18:38:29,202 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:38:29,202 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:38:29,202 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:38:29,202 - model_gateway - INFO - Health check: Model Gateway and Ollama connection OK.
+2025-08-30 18:38:29,202 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:38:29,202 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:38:36,470 - model_gateway - INFO - Received generation request for model 'qwen3:8b'
+2025-08-30 18:38:36,470 - model_gateway - DEBUG - Request details: prompt='What is the capital of France?...', stream=False, params={}
+2025-08-30 18:38:36,470 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:38:36,471 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:38:36,485 - model_gateway - DEBUG - Forwarding request to Ollama: {'model': 'qwen3:8b', 'prompt': 'What is the capital of France?', 'stream': False, 'options': {}}
+2025-08-30 18:38:36,486 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=300.0 socket_options=None
+2025-08-30 18:38:36,487 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fd3baa57610>
+2025-08-30 18:38:36,487 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-08-30 18:38:36,487 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:38:36,487 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-08-30 18:38:36,488 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:38:36,488 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-08-30 18:38:36,488 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 404, b'Not Found', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:38:36 GMT'), (b'Content-Length', b'38')])
+2025-08-30 18:38:36,488 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 404 Not Found"
+2025-08-30 18:38:36,488 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-08-30 18:38:36,488 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:38:36,488 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:38:36,488 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:38:36,488 - model_gateway - DEBUG - Received response from Ollama: Status 404
+2025-08-30 18:38:36,489 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:38:36,489 - httpcore.connection - DEBUG - close.complete
+2025-08-30 18:38:36,489 - model_gateway - ERROR - Ollama returned error 404: {"error":"model 'qwen3:8b' not found"}
+2025-08-30 18:39:47,551 - model_gateway - INFO - Received generation request for model 'qwen3:8b'
+2025-08-30 18:39:47,551 - model_gateway - DEBUG - Request details: prompt='What is the capital of France?...', stream=False, params={}
+2025-08-30 18:39:47,551 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-08-30 18:39:47,551 - httpx - DEBUG - load_verify_locations cafile='/home/yosh/repos/AgenticRAG/services/model-gateway/venv/lib/python3.13/site-packages/certifi/cacert.pem'
+2025-08-30 18:39:47,566 - model_gateway - DEBUG - Forwarding request to Ollama: {'model': 'qwen3:8b', 'prompt': 'What is the capital of France?', 'stream': False, 'options': {}}
+2025-08-30 18:39:47,566 - httpcore.connection - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=300.0 socket_options=None
+2025-08-30 18:39:47,567 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fd3ba011940>
+2025-08-30 18:39:47,567 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-08-30 18:39:47,568 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-08-30 18:39:47,568 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-08-30 18:39:47,568 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-08-30 18:39:47,568 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-08-30 18:40:02,639 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 30 Aug 2025 23:40:02 GMT'), (b'Content-Length', b'1962')])
+2025-08-30 18:40:02,639 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-08-30 18:40:02,640 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-08-30 18:40:02,640 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-08-30 18:40:02,640 - httpcore.http11 - DEBUG - response_closed.started
+2025-08-30 18:40:02,640 - httpcore.http11 - DEBUG - response_closed.complete
+2025-08-30 18:40:02,640 - model_gateway - DEBUG - Received response from Ollama: Status 200
+2025-08-30 18:40:02,640 - model_gateway - INFO - Generation completed successfully for model 'qwen3:8b'.
+2025-08-30 18:40:02,641 - httpcore.connection - DEBUG - close.started
+2025-08-30 18:40:02,641 - httpcore.connection - DEBUG - close.complete

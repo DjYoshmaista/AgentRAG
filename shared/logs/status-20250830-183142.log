@@ -1,0 +1,10 @@
+[2025-08-30 18:31:42] [STATUS] === Starting Enhanced System Status Check ===
+[0;34m==== System Overview ====[0m
+[2025-08-30 18:31:42] [STATUS] HEADER: System Overview
+Log File: /home/yosh/repos/AgenticRAG/shared/logs/status-20250830-183142.log
+Project Root: /home/yosh/repos/AgenticRAG/shared
+Configuration File: /home/yosh/repos/AgenticRAG/shared/shared/configs/system.yaml
+
+[0;34m==== Core Service Status ====[0m
+[2025-08-30 18:31:42] [STATUS] HEADER: Core Service Status
+grep: /home/yosh/repos/AgenticRAG/shared/shared/configs/system.yaml: No such file or directory

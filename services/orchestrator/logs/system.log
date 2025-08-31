@@ -1,0 +1,36 @@
+2025-08-30 18:13:10,545 - orchestrator - INFO - Orchestrator logging configured successfullly.
+2025-08-30 18:13:40,869 - orchestrator - INFO - Orchestrator logging configured successfullly.
+2025-08-30 18:13:40,874 - orchestrator - INFO - Model Gateway URL configured as http://localhost:8070
+2025-08-30 18:13:40,876 - orchestrator - INFO - Starting Orchestrator application...
+2025-08-30 18:13:40,879 - orchestrator - INFO - Orchestrator service is starting up...
+2025-08-30 18:13:51,308 - orchestrator - INFO - Task created with ID: d5d86abc-966b-48db-907e-6c55ea5f64a6
+2025-08-30 18:13:51,885 - orchestrator - INFO - Handling LLM task d5d86abc-966b-48db-907e-6c55ea5f64a6 with model llama2
+2025-08-30 18:13:51,903 - orchestrator - ERROR - Unexpected error handling LLM task d5d86abc-966b-48db-907e-6c55ea5f64a6: name 'task_parameters' is not defined
+2025-08-30 18:30:20,259 - orchestrator - INFO - Task created with ID: d0a18d25-de2d-432a-b24e-48954845c67d
+2025-08-30 18:30:20,699 - orchestrator - INFO - Handling LLM task d0a18d25-de2d-432a-b24e-48954845c67d with model llama2
+2025-08-30 18:30:20,714 - orchestrator - ERROR - Unexpected error handling LLM task d0a18d25-de2d-432a-b24e-48954845c67d: name 'task_parameters' is not defined
+2025-08-30 18:31:35,430 - orchestrator - INFO - Task created with ID: 00bd1c10-68ea-4ff6-8b5b-6de5e9d63b81
+2025-08-30 18:31:35,780 - orchestrator - INFO - Handling LLM task 00bd1c10-68ea-4ff6-8b5b-6de5e9d63b81 with model llama2
+2025-08-30 18:31:35,795 - orchestrator - ERROR - Unexpected error handling LLM task 00bd1c10-68ea-4ff6-8b5b-6de5e9d63b81: name 'task_parameters' is not defined
+2025-08-30 18:32:52,793 - orchestrator - INFO - Task created with ID: 38dca743-ccbb-4a2e-bebf-2bd44475292e
+2025-08-30 18:32:52,857 - orchestrator - INFO - Handling LLM task 38dca743-ccbb-4a2e-bebf-2bd44475292e with model llama2
+2025-08-30 18:32:52,872 - orchestrator - ERROR - Unexpected error handling LLM task 38dca743-ccbb-4a2e-bebf-2bd44475292e: name 'task_parameters' is not defined
+2025-08-30 18:35:41,974 - orchestrator - INFO - Task created with ID: 7ecce996-f945-4fe5-9098-52f98bdfa116
+2025-08-30 18:35:42,008 - orchestrator - INFO - Handling LLM task 7ecce996-f945-4fe5-9098-52f98bdfa116 with model qwen3:8b
+2025-08-30 18:35:42,023 - orchestrator - ERROR - Unexpected error handling LLM task 7ecce996-f945-4fe5-9098-52f98bdfa116: name 'task_parameters' is not defined
+2025-08-30 18:37:55,077 - orchestrator - INFO - Task created with ID: 28134c6b-30b1-4cbd-995f-888ca8ebeb6b
+2025-08-30 18:37:55,134 - orchestrator - INFO - Handling LLM task 28134c6b-30b1-4cbd-995f-888ca8ebeb6b with model qwen3:8b
+2025-08-30 18:37:55,148 - orchestrator - ERROR - Unexpected error handling LLM task 28134c6b-30b1-4cbd-995f-888ca8ebeb6b: name 'task_parameters' is not defined
+2025-08-30 18:38:20,226 - orchestrator - INFO - Orchestrator service is shutting down...
+2025-08-30 18:38:28,434 - orchestrator - INFO - Orchestrator logging configured successfullly.
+2025-08-30 18:38:28,438 - orchestrator - INFO - Model Gateway URL configured as http://localhost:8070
+2025-08-30 18:38:28,440 - orchestrator - INFO - Starting Orchestrator application...
+2025-08-30 18:38:28,443 - orchestrator - INFO - Orchestrator service is starting up...
+2025-08-30 18:38:36,053 - orchestrator - INFO - Task created with ID: cbb89430-368e-4381-acb6-3b882ca8b020
+2025-08-30 18:38:36,447 - orchestrator - INFO - Handling LLM task cbb89430-368e-4381-acb6-3b882ca8b020 with model qwen3:8b
+2025-08-30 18:38:36,490 - httpx - INFO - HTTP Request: POST http://localhost:8070/generate "HTTP/1.1 404 Not Found"
+2025-08-30 18:38:36,490 - orchestrator - ERROR - HTTP error from Model Gateway for task cbb89430-368e-4381-acb6-3b882ca8b020: 404 - {"detail":"Ollama error: {\"error\":\"model 'qwen3:8b' not found\"}"}
+2025-08-30 18:39:47,040 - orchestrator - INFO - Task created with ID: e915002c-a709-4bd4-8384-29edc4b2203a
+2025-08-30 18:39:47,533 - orchestrator - INFO - Handling LLM task e915002c-a709-4bd4-8384-29edc4b2203a with model qwen3:8b
+2025-08-30 18:40:02,642 - httpx - INFO - HTTP Request: POST http://localhost:8070/generate "HTTP/1.1 200 OK"
+2025-08-30 18:40:02,643 - orchestrator - INFO - LLM task e915002c-a709-4bd4-8384-29edc4b2203a completed successfully.

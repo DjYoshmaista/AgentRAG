@@ -1,0 +1,28 @@
+/home/yosh/repos/AgenticRAG/services/orchestrator/app.py:280: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+/home/yosh/repos/AgenticRAG/services/orchestrator/app.py:284: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("shutdown")
+INFO:     Started server process [75211]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8001 (Press CTRL+C to quit)
+/home/yosh/repos/AgenticRAG/services/orchestrator/app.py:343: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return {"status": "healthy", "timestamp": datetime.utcnow().isoformat()}
+Orchestrator started
+INFO:     127.0.0.1:42746 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47850 - "GET /health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [75211]
+Orchestrator stopped

@@ -1,0 +1,5 @@
+Starting Vector Engine...
+Found 2 similar vectors
+Vector ID: vector1, Score: 1.000
+Vector ID: vector2, Score: 0.975
+Vector engine listening on .{ .any = .{ .family = 2, .data = { 31, 144, 127, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0 } }, .in = .{ .sa = .{ .family = 2, .port = 36895, .addr = 16777343, .zero = { ... } } }, .in6 = .{ .sa = .{ .family = 2, .port = 36895, .flowinfo = 16777343, .addr = { ... }, .scope_id = 0 } }, .un = .{ .family = 2, .path = { 31, 144, 127, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } } }

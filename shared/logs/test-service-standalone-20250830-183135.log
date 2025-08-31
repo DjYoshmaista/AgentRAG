@@ -1,0 +1,44 @@
+[2025-08-30 18:31:35] [INFO] Running test-service.sh standalone.
+[2025-08-30 18:31:35] [INFO] Log file: /home/yosh/repos/AgenticRAG/shared/logs/test-service-standalone-20250830-183135.log
+[2025-08-30 18:31:35] [TEST] ==== Starting Detailed Service Tests ====
+[2025-08-30 18:31:35] [TEST] Initiating tests for Orchestrator on port 8001
+  [34mℹ[m Orchestrator (8001): Running detailed tests...
+[2025-08-30 18:31:35] [TEST] [INFO] Orchestrator (8001): Running detailed tests...
+[2025-08-30 18:31:35] [TEST] Testing Orchestrator functionality on http://localhost:8001
+[2025-08-30 18:31:35] [TEST] Running test: Health Endpoint
+[2025-08-30 18:31:35] [TEST] Command: curl -s -f http://localhost:8001/health
+  [32m✓[m Health Endpoint: PASSED
+[2025-08-30 18:31:35] [TEST] [INFO] Health Endpoint: PASSED
+[2025-08-30 18:31:35] [TEST] Running test: Status Endpoint
+[2025-08-30 18:31:35] [TEST] Command: curl -s -f http://localhost:8001/status
+  [32m✓[m Status Endpoint: PASSED
+[2025-08-30 18:31:35] [TEST] [INFO] Status Endpoint: PASSED
+[2025-08-30 18:31:35] [TEST] Running test: Task Creation
+[2025-08-30 18:31:35] [TEST] Command: curl -s -f -X POST -H Content-Type: application/json -d {"task_type": "llm_inference", "description": "Status check task", "parameters": {"model": "llama2", "prompt": "Status check: Respond with 'OK' only."}} http://localhost:8001/tasks
+  [32m✓[m Task Creation: PASSED
+[2025-08-30 18:31:35] [TEST] [INFO] Task Creation: PASSED
+[2025-08-30 18:31:35] [TEST] Initiating tests for Model Gateway on port 8070
+  [34mℹ[m Model Gateway (8070): Running detailed tests...
+[2025-08-30 18:31:35] [TEST] [INFO] Model Gateway (8070): Running detailed tests...
+[2025-08-30 18:31:35] [TEST] Testing Model Gateway functionality on http://localhost:8070
+[2025-08-30 18:31:35] [TEST] Running test: Health Endpoint
+[2025-08-30 18:31:35] [TEST] Command: curl -s -f http://localhost:8070/health
+  [32m✓[m Health Endpoint: PASSED
+[2025-08-30 18:31:35] [TEST] [INFO] Health Endpoint: PASSED
+[2025-08-30 18:31:35] [TEST] Running test: List Models
+[2025-08-30 18:31:35] [TEST] Command: curl -s -f http://localhost:8070/models
+  [32m✓[m List Models: PASSED
+[2025-08-30 18:31:35] [TEST] [INFO] List Models: PASSED
+  [33m⚠[m Simple Generation: RESULT INCONCLUSIVE (Exit code: 22, might need model pull)
+[2025-08-30 18:31:35] [TEST] [WARN] Simple Generation: RESULT INCONCLUSIVE (Exit code: 22, might need model pull)
+[2025-08-30 18:31:35] [TEST] WARN: Simple generation test inconclusive (Exit code: 22). This might be OK if no model is loaded yet.
+[2025-08-30 18:31:35] [TEST] Initiating tests for Vector Engine on port 8080
+  [34mℹ[m Vector Engine (8080): Running detailed tests...
+[2025-08-30 18:31:35] [TEST] [INFO] Vector Engine (8080): Running detailed tests...
+[2025-08-30 18:31:35] [TEST] Testing Vector Engine functionality on http://localhost:8080
+[2025-08-30 18:31:35] [TEST] Running test: Basic HTTP Response
+[2025-08-30 18:31:35] [TEST] Command: curl -s -f http://localhost:8080/
+  [32m✓[m Basic HTTP Response: PASSED
+[2025-08-30 18:31:35] [TEST] [INFO] Basic HTTP Response: PASSED
+[2025-08-30 18:31:35] [TEST] ==== Detailed Service Tests Completed ====
+[2025-08-30 18:31:35] [INFO] Detailed test results for this standalone run are logged to: /home/yosh/repos/AgenticRAG/shared/logs/test-service-standalone-20250830-183135.log

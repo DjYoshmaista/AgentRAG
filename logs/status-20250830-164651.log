@@ -1,0 +1,54 @@
+[2025-08-30 16:46:51] === Starting Enhanced System Status Check ===
+[0;34m==== System Overview ====[0m
+[2025-08-30 16:46:51] HEADER: System Overview
+Log File: /home/yosh/repos/AgenticRAG/logs/status-20250830-164651.log
+Project Root: /home/yosh/repos/AgenticRAG
+Configuration File: /home/yosh/repos/AgenticRAG/shared/configs/system.yaml
+
+[0;34m==== Core Service Status ====[0m
+[2025-08-30 16:46:51] HEADER: Core Service Status
+[2025-08-30 16:46:51] Checking status for orchestrator (PID file: /home/yosh/repos/AgenticRAG/logs/orchestrator.pid, URL: http://localhost:8001/health)
+[2025-08-30 16:46:51] Found PID: 75211
+[2025-08-30 16:46:51] Process 75211 is running.
+[2025-08-30 16:46:51] Health check URL http://localhost:8001/health responded successfully.
+[0;32m✓[0m orchestrator (PID: 75211) - Running & Responsive 
+[2025-08-30 16:46:51] [INFO] orchestrator (PID: 75211) - Running & Responsive 
+[2025-08-30 16:46:51] Checking status for model-gateway (PID file: /home/yosh/repos/AgenticRAG/logs/model-gateway.pid, URL: http://localhost:8070/health)
+[2025-08-30 16:46:51] Found PID: 75194
+[2025-08-30 16:46:51] Process 75194 is running.
+[2025-08-30 16:46:51] WARN: Process running but health check failed or URL not provided.
+[1;33m⚠[0m model-gateway (PID: 75194) - Running but not responsive 
+[2025-08-30 16:46:51] [WARN] model-gateway (PID: 75194) - Running but not responsive 
+[2025-08-30 16:46:51] Checking status for vector-engine (PID file: /home/yosh/repos/AgenticRAG/logs/vector-engine.pid, URL: http://localhost:8080)
+[2025-08-30 16:46:51] Found PID: 75168
+[2025-08-30 16:46:51] Process 75168 is running.
+[2025-08-30 16:46:51] WARN: Process running but health check failed or URL not provided.
+[1;33m⚠[0m vector-engine (PID: 75168) - Running but not responsive 
+[2025-08-30 16:46:51] [WARN] vector-engine (PID: 75168) - Running but not responsive 
+[2025-08-30 16:46:51] Checking status for message-broker (PID file: /home/yosh/repos/AgenticRAG/logs/message-broker.pid, URL: )
+[2025-08-30 16:46:51] Found PID: 75176
+[2025-08-30 16:46:51] Process 75176 is running.
+[2025-08-30 16:46:51] WARN: Process running but health check failed or URL not provided.
+[1;33m⚠[0m message-broker (PID: 75176) - Running but not responsive 
+[2025-08-30 16:46:51] [WARN] message-broker (PID: 75176) - Running but not responsive 
+[2025-08-30 16:46:51] Checking status for ollama (PID file: /home/yosh/repos/AgenticRAG/logs/ollama.pid, URL: http://localhost:11434)
+[2025-08-30 16:46:51] INFO: No PID file found for ollama.
+[0;31m✗[0m ollama - Not running (no PID file)
+[2025-08-30 16:46:51] [INFO] ollama - Not running (no PID file)
+[2025-08-30 16:46:51] Checking status for nats (PID file: /home/yosh/repos/AgenticRAG/logs/nats.pid, URL: )
+[2025-08-30 16:46:51] Found PID: 75149
+[2025-08-30 16:46:51] Process 75149 is running.
+[2025-08-30 16:46:51] WARN: Process running but health check failed or URL not provided.
+[1;33m⚠[0m nats (PID: 75149) - Running but not responsive 
+[2025-08-30 16:46:51] [WARN] nats (PID: 75149) - Running but not responsive 
+[0;34m==== Detailed Service Tests ====[0m
+[2025-08-30 16:46:51] HEADER: Detailed Service Tests
+[2025-08-30 16:46:51] Running detailed service tests...
+[2025-08-30 16:46:51] Executing /home/yosh/repos/AgenticRAG/shared/scripts/test-service.sh
+tee: /home/yosh/repos/AgenticRAG/shared/logs/test-service-20250830-164651.log: No such file or directory
+[2025-08-30 16:46:51] [TEST] ==== Starting Detailed Service Tests ====
+[2025-08-30 16:46:51] WARN: Detailed tests script encountered issues or failed.
+[0;34m==== System Status Summary ====[0m
+[2025-08-30 16:46:51] HEADER: System Status Summary
+Status check completed. Detailed logs are in: /home/yosh/repos/AgenticRAG/logs/status-20250830-164651.log
+[2025-08-30 16:46:51] === System Status Check Completed ===
