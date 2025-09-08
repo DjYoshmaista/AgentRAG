@@ -1,5 +1,5 @@
-2025-08-30 18:38:28,434 - orchestrator - INFO - Orchestrator logging configured successfullly.
-2025-08-30 18:38:28,438 - orchestrator - INFO - Model Gateway URL configured as http://localhost:8070
+2025-09-08 11:54:39,421 - orchestrator - INFO - Orchestrator logging configured successfullly.
+2025-09-08 11:54:39,427 - orchestrator - INFO - Model Gateway URL configured as http://localhost:8070
 /home/yosh/repos/AgenticRAG/services/orchestrator/app.py:354: DeprecationWarning: 
         on_event is deprecated, use lifespan event handlers instead.
 
@@ -14,37 +14,43 @@
         [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
         
   @app.on_event("shutdown")
-2025-08-30 18:38:28,440 - orchestrator - INFO - Starting Orchestrator application...
-INFO:     Started server process [97678]
+2025-09-08 11:54:39,428 - orchestrator - INFO - Starting Orchestrator application...
+INFO:     Started server process [137410]
 INFO:     Waiting for application startup.
-2025-08-30 18:38:28,443 - orchestrator - INFO - Orchestrator service is starting up...
+2025-09-08 11:54:39,436 - orchestrator - INFO - Orchestrator service is starting up...
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8001 (Press CTRL+C to quit)
 /home/yosh/repos/AgenticRAG/services/orchestrator/app.py:415: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   return {"status": "healthy", "timestamp": datetime.utcnow().isoformat()}
 Orchestrator started
-INFO:     127.0.0.1:35536 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40734 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45168 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45172 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45180 - "GET /status HTTP/1.1" 200 OK
 <string>:10: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-2025-08-30 18:38:36,053 - orchestrator - INFO - Task created with ID: cbb89430-368e-4381-acb6-3b882ca8b020
-INFO:     127.0.0.1:37366 - "POST /tasks HTTP/1.1" 200 OK
+2025-09-08 11:54:47,690 - orchestrator - INFO - Task created with ID: 25c41eb1-556a-4c0a-8ad3-b99c9ac64ce8
+INFO:     127.0.0.1:45192 - "POST /tasks HTTP/1.1" 200 OK
 /home/yosh/repos/AgenticRAG/services/orchestrator/app.py:171: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   task.started_at = datetime.utcnow()
-2025-08-30 18:38:36,447 - orchestrator - INFO - Handling LLM task cbb89430-368e-4381-acb6-3b882ca8b020 with model qwen3:8b
-2025-08-30 18:38:36,490 - httpx - INFO - HTTP Request: POST http://localhost:8070/generate "HTTP/1.1 404 Not Found"
-2025-08-30 18:38:36,490 - orchestrator - ERROR - HTTP error from Model Gateway for task cbb89430-368e-4381-acb6-3b882ca8b020: 404 - {"detail":"Ollama error: {\"error\":\"model 'qwen3:8b' not found\"}"}
+2025-09-08 11:54:48,441 - orchestrator - INFO - Handling LLM task 25c41eb1-556a-4c0a-8ad3-b99c9ac64ce8 with model llama2
+2025-09-08 11:54:48,495 - httpx - INFO - HTTP Request: POST http://localhost:8070/generate "HTTP/1.1 404 Not Found"
+2025-09-08 11:54:48,496 - orchestrator - ERROR - HTTP error from Model Gateway for task 25c41eb1-556a-4c0a-8ad3-b99c9ac64ce8: 404 - {"detail":"Ollama error: {\"error\":\"model 'llama2' not found\"}"}
 /home/yosh/repos/AgenticRAG/services/orchestrator/app.py:195: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   task.completed_at = datetime.utcnow()
-Executing task cbb89430-368e-4381-acb6-3b882ca8b020: Answer a question
-Task cbb89430-368e-4381-acb6-3b882ca8b020 failed: Model gateway returned error: 404 - {"detail":"Ollama error: {\"error\":\"model 'qwen3:8b' not found\"}"}
-INFO:     127.0.0.1:45598 - "GET /tasks/cbb89430-368e-4381-acb6-3b882ca8b020 HTTP/1.1" 200 OK
-2025-08-30 18:39:47,040 - orchestrator - INFO - Task created with ID: e915002c-a709-4bd4-8384-29edc4b2203a
-INFO:     127.0.0.1:36526 - "POST /tasks HTTP/1.1" 200 OK
-2025-08-30 18:39:47,533 - orchestrator - INFO - Handling LLM task e915002c-a709-4bd4-8384-29edc4b2203a with model qwen3:8b
-Executing task e915002c-a709-4bd4-8384-29edc4b2203a: Answer a question
-INFO:     127.0.0.1:53674 - "GET /tasks/e915002c-a709-4bd4-8384-29edc4b2203a HTTP/1.1" 200 OK
-2025-08-30 18:40:02,642 - httpx - INFO - HTTP Request: POST http://localhost:8070/generate "HTTP/1.1 200 OK"
-2025-08-30 18:40:02,643 - orchestrator - INFO - LLM task e915002c-a709-4bd4-8384-29edc4b2203a completed successfully.
-/home/yosh/repos/AgenticRAG/services/orchestrator/app.py:187: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-  task.completed_at = datetime.utcnow()
-INFO:     127.0.0.1:53676 - "GET /tasks/e915002c-a709-4bd4-8384-29edc4b2203a HTTP/1.1" 200 OK
-INFO:     127.0.0.1:51896 - "GET /tasks/e915002c-a709-4bd4-8384-29edc4b2203a HTTP/1.1" 200 OK
+Executing task 25c41eb1-556a-4c0a-8ad3-b99c9ac64ce8: Status check task
+Task 25c41eb1-556a-4c0a-8ad3-b99c9ac64ce8 failed: Model gateway returned error: 404 - {"detail":"Ollama error: {\"error\":\"model 'llama2' not found\"}"}
+INFO:     127.0.0.1:45202 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45208 - "GET /status HTTP/1.1" 200 OK
+2025-09-08 11:54:52,648 - orchestrator - INFO - Task created with ID: 4a5930aa-649d-4dfc-87db-bb16b279b1c2
+INFO:     127.0.0.1:45222 - "POST /tasks HTTP/1.1" 200 OK
+2025-09-08 11:54:53,500 - orchestrator - INFO - Handling LLM task 4a5930aa-649d-4dfc-87db-bb16b279b1c2 with model llama2
+2025-09-08 11:54:53,541 - httpx - INFO - HTTP Request: POST http://localhost:8070/generate "HTTP/1.1 404 Not Found"
+2025-09-08 11:54:53,542 - orchestrator - ERROR - HTTP error from Model Gateway for task 4a5930aa-649d-4dfc-87db-bb16b279b1c2: 404 - {"detail":"Ollama error: {\"error\":\"model 'llama2' not found\"}"}
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-09-08 11:56:25,129 - orchestrator - INFO - Orchestrator service is shutting down...
+INFO:     Application shutdown complete.
+INFO:     Finished server process [137410]
+Executing task 4a5930aa-649d-4dfc-87db-bb16b279b1c2: Status check task
+Task 4a5930aa-649d-4dfc-87db-bb16b279b1c2 failed: Model gateway returned error: 404 - {"detail":"Ollama error: {\"error\":\"model 'llama2' not found\"}"}
+Orchestrator stopped
