@@ -1,0 +1,6 @@
+**logs/
+logs/
+**.log
+**.pid
+**__pycache__/
+__pycache__/
